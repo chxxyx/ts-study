@@ -54,4 +54,7 @@ const yuJin2: IdolInterface = {
     //year: 2003
 }
 
-// 여기서
+// 타입과 인터페이스의 가장 큰 차이 :
+// 인터페이스는 기본적으로 객체형태로 들어간다. 그래서 우리가 함수도 선언할 수 잇고, 일반 객체도 선언할 수 있는데,
+// 타입처럼 type MaleOrFemale = 'male' | 'female'; -> 이런 형태의 primitive를 나열할 수는 없다.
+
