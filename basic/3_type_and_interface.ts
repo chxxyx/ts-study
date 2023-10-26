@@ -3,7 +3,6 @@
  * Type and Interface
  */
 
-import { TriggerConfig } from "react-hook-form";
 
 /**
  * Type
