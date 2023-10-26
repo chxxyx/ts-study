@@ -30,3 +30,17 @@ function runWork() {
     }
 }
 console.log(runWork());
+console.log(runWork() === "DONE"); // 이러면 당연히 문자열 DONE이 반환되므로 true이지만
+// 여기서 문자가 조금이라도 달라지면 false가 나오게 된다.
+// 우리가 문자열로 무언가의 상태, 한정된 값들을 표현하고 비교해야ㅑ하는 값들을 표현할 때 가장 큰
+// 문제점이다.
+// 자바스크립트만 쓸 대는 이걸 상태를 변수로 만들었다.
+const doneState = 'DONE';
+var State;
+(function (State) {
+    State["DONE"] = "DONE";
+    State["LOADING"] = "LOADING";
+    State["INITIAL"] = "INITIAL";
+    State["ERROR"] = "ERROR";
+})(State || (State = {}));
+// -> 이렇게 만들고 콘솔에 찍어보면 이 값들에 0부터 숫자가 하나씩 부여된다. 

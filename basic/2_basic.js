@@ -9,7 +9,7 @@
  * 한번만 컴파일 해주면 자바스크립트가 실행된다. 그대로 자바스크립트 에닌이 사용된다.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-let helloText = "Hello";
+// let helloText: string = "Hello";
 // 이렇게 타입을 지정해주면 다른 타입의 값을 할당하려고 할 때 빨간 줄 에러가 뜬다.
 // 즉, 타입을 강제할 수가 있다.
 const stringVar = "string";
